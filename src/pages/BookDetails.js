@@ -38,7 +38,6 @@ const BookDetails = () => {
   //  Marking Book as Completed
   const addToCompletedHandler = () => {
     dispatch(readingActions.markAsDone(`/${bookId}`));
-    console.log("PROMENIO");
   };
 
   //  Toggle Note Handler

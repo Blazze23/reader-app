@@ -7,7 +7,8 @@ const SearchReadingList = (props) => {
 
   //
   const searchChangeHandler = (event) => {
-    setEnteredInput(event.target.value);
+    const search = event.target.value.toLowerCase();
+    setEnteredInput(search);
 
     props.onSearch(enteredInput);
   };

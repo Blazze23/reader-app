@@ -78,7 +78,10 @@ const readingSlice = createSlice({
       const id = action.payload;
       const existingItem = state.items.find((item) => item.id === id);
       existingItem.isCompleted = !existingItem.isCompleted;
-      state.selectedBook.isCompleted = !state.selectedBook.isCompleted;
+
+      if (state.selectedBook) {
+        state.selectedBook.isCompleted = !state.selectedBook.isCompleted;
+      }
 
       //  Saving marked items state to local storage
       localStorage.removeItem(LIST_STATE_KEY);
@@ -101,7 +104,7 @@ const readingSlice = createSlice({
     searchReadingList(state, action) {
       const title = action.payload;
       state.searchItems = state.items.filter((item) =>
-        item.title.trim().toLowerCase().includes(title.trim().toLowerCase())
+        item.title.toLowerCase().includes(title)
       );
     },
   },
