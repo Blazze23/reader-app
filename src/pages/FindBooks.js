@@ -14,7 +14,7 @@ const FindBooks = (props) => {
     // Setting pending status
     dispatch(findBooksActions.showPendingStatus());
     fetch(
-      `http://openlibrary.org/search.json?q=${queryData}&mode=everything.json`
+      `https://openlibrary.org/search.json?q=${queryData}&mode=everything.json`
     )
       .then((response) => {
         return response.json();

@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Reader App
+
+This single page app was created in React, it is using Redux and Redux toolkit for storing app-wide state, and React Router V6 for Routing.
+
+Core features:
+
+1. finding books via [OpenLibrary](https://openlibrary.org/developers/api) API;
+2. adding and removing booksto your Reading List;
+3. marking books from your Reading List as completed;
+4. creating Notes;
+5. searching books withing your Reading List;
+
+Live preview available at: [react-reader.netlify.app](https://react-reader.netlify.app)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
