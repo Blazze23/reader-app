@@ -1,0 +1,10 @@
+.list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.empty-list {
+  text-align: center;
+  font-style: italic;
+}

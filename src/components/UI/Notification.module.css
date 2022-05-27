@@ -1,0 +1,24 @@
+.notification {
+  width: 100%;
+  height: 3rem;
+  background-color: #d3b979;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 10%;
+  align-items: center;
+  color: #fefefe;
+}
+
+.notification h3,
+.notification p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.error {
+  background-color: #cf6370;
+}
+
+.success {
+  background-color: #208731;
+}

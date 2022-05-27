@@ -1,0 +1,39 @@
+.search h2 {
+  color: #393d32;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.75rem;
+  position: relative;
+  max-width: 40rem;
+}
+
+.search h2::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 7rem;
+  background-color: #904e30;
+  left: 1%;
+  top: 5%;
+  position: absolute;
+}
+
+.search h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 7rem;
+  background-color: #904e30;
+  right: 1%;
+  top: 95%;
+  position: absolute;
+}
+
+@media (min-width: 600px) {
+  .search h2::before {
+    top: 50%;
+  }
+  .search h2::after {
+    top: 50%;
+  }
+}

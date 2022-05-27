@@ -1,0 +1,22 @@
+.note {
+  padding: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.note p {
+  color: #393d32;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem auto 0;
+}
+
+.actions button:hover,
+.actions button:active {
+  border-color: #393d32;
+  background-color: #cf6370;
+}
